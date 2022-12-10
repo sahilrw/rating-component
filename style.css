@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;1,600&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Lexend+Deca&family=Overpass:wght@400;700&family=Racing+Sans+One&family=Shadows+Into+Light&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+.card {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  font-family: 'Overpass' ;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: #fff;
+}
+
+.pre-submitted,
+.submitted-form {
+  background-color: hsl(213, 19%, 18%);
+  margin-top: 140px;
+  border-radius: 20px;
+  padding: 35px;
+  margin-left: 30px;
+}
+.pre-submitted{
+  height: 460px;
+}
+
+
+.card,
+.btn{
+  background-color: hsl(210, 15%, 20%);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.text-container {
+  margin-top: 30px;
+  font-family: Overpass;
+  color: hsl(0, 0%, 100%);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  margin-top: 25px;
+  line-height: 30px;
+}
+.rating-btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 30px;
+  font-size: 20px;
+  color: hsl(217, 12%, 63%);
+}
+
+.btn:hover {
+  background-color: hsl(25, 94%, 50%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.btn:focus {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+.submit {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  width: 300px;
+  height: 60px;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.submitted-form {
+    display: none;
+}
+
+#submitted-form, .rating-submit, .rating{
+    height: 350px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating {
+  background-color: hsl(210, 14%, 14%);
+  border-radius: 20px;
+  height: 40px;
+  width: 170px;
+  color: hsl(25, 97%, 53%);
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+@media all and (min-width: 375px) {
+  .pre-submitted {
+    height: 460px;
+    width: 370px;
+  }
+
+  .submit {
+    width: 370px;
+  }
+}
